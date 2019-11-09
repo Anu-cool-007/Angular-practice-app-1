@@ -13,6 +13,11 @@
   <button (click)="share()" >
     Share
   </button>
+  
+  <app-product-alerts
+    [product]="product"
+    (alertEvent)="onAlertEvent(product)">
+  </app-product-alerts>
 </div>
 
 <!-- 
